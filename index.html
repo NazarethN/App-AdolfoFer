@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Perfil de Riesgo</title>
+  <link rel="stylesheet" type="text/css" href="Adolfo Proyect/styles.css">
+</head>
+<body>
+  <h1>Calculadora de Perfil de Riesgo</h1>
+  <form action="calcular_riesgo.php" method="POST">
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    
+    <label for="genero">Genero:</label><br>
+    <input type="radio" id="genero-masculino" name="genero" value="Masculino" required>
+    <label for="genero-masculino">Masculino</label>
+    <input type="radio" id="genero-femenino" name="genero" value="Femenino">
+    <label for="genero-femenino">Femenino</label><br><br>
+    
+    <label for="pais-nacimiento">Pais de Nacimiento:</label><br>
+    <select id="pais-nacimiento" name="pais_nacimiento" required>
+      <option value="Panamá">Panama</option>
+      <option value="Otros países">Otros países</option>
+    </select><br><br>
+    
+    <label for="pais-residencia">Pais de Residencia:</label><br>
+    <select id="pais-residencia" name="pais_residencia" required>
+      <option value="Panamá">Panama</option>
+      <option value="Otros países">Otros paises</option>
+    </select><br><br>
+    
+    <label for="profesion">Profesion:</label><br>
+    <select id="profesion" name="profesion" required>
+      <option value="Abogado">Abogado</option>
+      <option value="Ingeniero">Ingeniero</option>
+      <option value="Médico">Medico</option>
+      <option value="Contador">Contador</option>
+      <option value="Otras">Otras</option>
+    </select><br><br>
+    
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" required><br><br>
+    
+    <label for="ingresos">Nivel de Ingresos:</label><br>
+    <input type="number" id="ingresos" name="ingresos" required><br><br>
+    
+    <label for="pep">PEP (Personas politicamente expuestas):</label><br>
+    <input type="radio" id="pep-si" name="pep" value="Sí" required>
+    <label for="pep-si">Si</label>
+    <input type="radio" id="pep-no" name="pep" value="No">
+    <label for="pep-no">No</label><br><br>
+    
+    <input type="submit" value="Calcular Riesgo">
+  </form>
+</body>
+</html>
